@@ -21,3 +21,11 @@ Callback de una funcion de dentro de una clase. 4 formas, mejor mirar para enten
 # Funciones callback
 
 Puedes crear una función, y crear otra función, y poner como parametro de entrada de la segunda función la primera función. (ej5.CallBackFunction.php se queda más claro)
+
+## DIFERENCIAS ENTRE ARRAY_FILTER() Y ARRAY_REDUCE()
+
+Array filter, devuelve un array más pequeño (filtrado), con la función que le hayas metido de callback
+
+Array reduce, crea una sola variable (ya no seria un array), con la función de callback que le hayas introducido
+
+_(PARA AMBOS CASOS MIRAR EL ej6MetodosArray)_

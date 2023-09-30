@@ -16,14 +16,20 @@
 
     // Array reduce
     // Reduce el array a solo un valor, u sando una función de callback
-
+    // Ejmplo con Array de numeros
     function suma($a, $b){
         return $a+$b;
     }
-
-
+    
     $resultado2 = array_reduce($miArrayNumeros, "suma");
     echo "<br>".$resultado2;
-    
+
+    // Ejemplo con Array de string
+    function junta($v, $b){
+        return $v."-".$b;
+    }
+
+    $resultado3 = array_reduce($miArrayString, "junta");
+    echo "<br>".$resultado3;
 
 ?>
