@@ -1,0 +1,29 @@
+services:
+  mysql:
+    image: mysql:8
+    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=password123
+      - MYSQL_DATABASE=php_mysql_crud
+    volumes:
+      - mysql_data:/var/lib/mysql
+  www:
+    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - ./www:/var/www/html
+    links:
+      - mysql
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 8081:80
+    environment:
+      - PMA_HOST=mysql
+    links:
+      - mysql:mysql
+volumes:
+  mysql_data:
