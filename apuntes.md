@@ -34,7 +34,7 @@ Array reduce, crea una sola variable (ya no seria un array), con la función de 
 
 _(PARA AMBOS CASOS MIRAR EL ej6MetodosArray)_
 
-## Ejercicio practico. [SOLUCIÓN](./ej7MenuYMetodos).
+## Ejercicio practico. [SOLUCIÓN](./www/ej7MenuYMetodos).
 
 Crear un menú con enlaces (pasamos la variable del switch en cada uno de los enlaces).
 

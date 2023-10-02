@@ -22,6 +22,16 @@
         echo "<p></p>";
     }
 
+    // Creo funcion para callback
+    function suma($num1,$num2){
+        return $num1+$num2;
+    }
+    // Meto funcion callback
+    function operacion($numero1, $numero2, $callBackFunc){
+        $resultado = $callBackFunc($numero1,$numero2);
+        echo "El resultado de sumar".$numero1." + ".$numero2." es <strong>".$resultado."</strong><br>";
+    }
+
     // Hacemos el switch que recibirá la $eleccion por medio del metodo GET
 
     switch($_GET['eleccion']){
@@ -101,6 +111,12 @@
             // Funcion que devuelve el año
             echo date("Y")."<br>";
             break;
+        
+        case 8:
+
+            operacion(13,12,'suma');
+            break;
+
         default:
             echo "<h1>VALOR NO VALIDO, INTENTELO DE NUEVO</h1>";
     }
