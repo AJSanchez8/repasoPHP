@@ -37,6 +37,19 @@
         echo valorPredeterminado(null);
         echo valorPredeterminado("JavaScipt y no tocar PHP :D");
 
+        // Uso del operador ... en una funcion
+
+        function suma($a,$b){
+            return $a+$b;
+        }
+        $arraySuma = [1,3];
+        // Puedes meter el array
+        $s1 = suma(...[1,3]);
+        echo $s1."<br>";
+        // O la variable del array
+        $s2 = suma(...$arraySuma);
+        echo $s2."<br>";
+
 ?>
 
 </body>
