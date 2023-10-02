@@ -1,6 +1,6 @@
-# Funciones en PHP (ej3Funciones.php)
+## Funciones en PHP [VER ej3Funciones.php](./www/ej3Funciones.php).
 
-## 3 TIPOS:
+### 3 TIPOS:
 
 En php hay 3 tipos de __Funcions__:
 
@@ -10,31 +10,39 @@ La 2º es por referencia, entra la referencia, por lo cual la salida es la misma
 
 La 3º es com valor predeterminado, se puede poner un valor predeterminado, asi si no entra ningun argumento a la función, saldría el valor predeterminado que hemos seleccionado.
 
-### Operador "..."
+#### Operador "..."
 
 Se utiliza para desempaquetar (spread) un array o iterable, en una lista de argumentos para una funcion.
 
-# Callbacks en PHP (ej4CallBacks.php)
+## Callbacks en PHP [VER ej4CallBacks.php](./www/ej4CallBacks.php).
 
-## VARIAS FORMAS DE HACERLO
+### VARIAS FORMAS DE HACERLO
 
 Callback de una sola funcion (Llama a la función)
 
 Callback de una funcion de dentro de una clase. 4 formas, mejor mirar para entenderlo bien ej4CallBacks.php
 
-# Funciones callback
+## Funciones callback [VER ej5CallBackFunction.php](./www/ej5CallBackFunction.php).
 
 Puedes crear una función, y crear otra función, y poner como parametro de entrada de la segunda función la primera función. (ej5.CallBackFunction.php se queda más claro)
 
-## DIFERENCIAS ENTRE ARRAY_FILTER() Y ARRAY_REDUCE()
+### Algunos metodos simples de array, SORT, POP, PUSH. [VER ej6MetodosArray.php](./www/ej6MetodosArray.php).
+
+Array pop (array_pop()): Borra el último valor del array. Ej.: ```php array_pop($MiArray);```
+
+Array push (array_push()): Añade un valor al final del array, como parametros debes meter primero el nombre del array y luego el valor. Ej.: ```php array_push($MiArray,1312);```
+
+Array sort (sort()): Ordena de orden ascendente tanto numeros como strings, string por orden ASCII. Ej.:```php sort($MiArray);```
+
+### DIFERENCIAS ENTRE ARRAY_FILTER() Y ARRAY_REDUCE() [VER ej6MetodosArray.php](./www/ej6MetodosArray.php).
 
 Array filter, devuelve un array más pequeño (filtrado), con la función que le hayas metido de callback
 
 Array reduce, crea una sola variable (ya no seria un array), con la función de callback que le hayas introducido
 
-_(PARA AMBOS CASOS MIRAR EL ej6MetodosArray)_
+_PARA AMBOS CASOS MIRAR [ENLACE](./www/ej6MetodosArray.php)_
 
-## Ejercicio practico. [SOLUCIÓN](./www/ej7MenuYMetodos).
+### Ejercicio practico. [VER SOLUCIÓN](./www/ej7MenuYMetodos).
 
 Crear un menú con enlaces (pasamos la variable del switch en cada uno de los enlaces).
 
