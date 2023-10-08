@@ -49,13 +49,50 @@ _PARA AMBOS CASOS MIRAR [ENLACE](./www/ej6MetodosArray.php)_
 
 ### Clases en PHP [CLASES 1](./www/ej8.1clases.php), [CLASES 2](./www/ej8.2clases2.php), [CLASES 3](./www/ej8.3clases3.php).
 
-### Namespaces en PHP [VER ej9Namespaces.php](./www/ej9Namespaces.php).
+### Namespaces [VER ej9Namespaces.php](./www/ej9Namespaces.php).
 
-### Herencia en PHP [VER ej10Herencia.php](./www/ej10Herencia.php).
+### Herencia [VER ej10Herencia.php](./www/ej10Herencia.php).
 
-### Traits en PHP [VER ej11Traits.php](./www/ej11Traits.php).
+### Traits [VER ej11Traits.php](./www/ej11Traits.php).
 
 Mientras que una clase solo puede __HEREDAR__ de otra clase, los traits hacen que se pueda superar ese límite y hacer una herencia múltiple. Pueden compartir metodos y propiedades sin que sea necesarias relaciones jerarquicas de herencia
+
+### Operador de Resolución de Ámbito "::" -> Doble dos-puntos. [VER ej12Operador::.php](./www/ej12Operador::.php).
+
+Es utilizado para acceder a métodos __ESTÁTICOS__, constantes y sobreescribir propiedades o métodos. 
+Podemos crear una varible con el nombre de la clase para acceder a ella con ::
+```php
+    $nombreDeClase = 'Camion';
+    echo $nombreDeClase::sonido;
+```
+
+### ABSTRACT Clases y Metodos [VER ej13Abstract.php](./www/ej13Abstract.php).
+
+Se utiliza la palabra __ABSTRACT__ para crear la clase. ```php abstract class Coche{}```, para utilizarla se usa __EXTENDS__
+
+##### Clases PADRES
+
+- Tiene que tener al menos 1 métodos abstracto.
+- Los métodos abstractos estan declarados pero __NO__ tienen implementación(_funcionalidad_).
+- Se definen usando __ABSTRACT__.
+
+##### Clases PADRES
+
+- El método que __ES OBLIGATORIO__ que implemente (_añada algo de funcionalidad_) debe llamarse igual que el del padre.
+- La cantidad de argumentos requeridos en el método deben ser igual que la del metodo padre.
+
+[Ejemplos](./www/ej13Abstract.php).
+
+### INTERFACES [Ver ej14Interfaces.php](./www/ej14Interfaces.php)
+
+Se utiliza la palabra __INTERFACE__ para crear la clase. ``` interface Coche{}```, para implementarla en una clase se usa __IMPLEMENTS__
+
+##### DIFERENCIAS ENTRE ABSTRACT E INTERFACE [EXTENDIDO](./interfaceVSabstract.md)
+
+- Las interfaces no pueden tener propiedades.
+- Todos los metodos de una interfaz __DEBEN__ ser publicos.
+- Las clases pueden implementar __múltiples interfaces__, pero _solo pueden heredar de una clase abstracta_.
+
 
 ### Ejercicio practico. [VER SOLUCIÓN](./www/ej7MenuYMetodos).
 
