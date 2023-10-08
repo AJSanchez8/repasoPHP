@@ -34,6 +34,10 @@ Array push (array_push()): Añade un valor al final del array, como parametros d
 
 Array sort (sort()): Ordena de orden ascendente tanto numeros como strings, string por orden ASCII. Ej.:```php sort($MiArray);```
 
+Array unset (unset()): Elimina el valor elegido, necesita como argumentos el indice que quieres borrar.__NO REAJUSTA LOS INDICES__. Ej.: ```unset($miArrayString[1]);```
+
+Array splice (array_splice()):Elimina un valor o conjunto de valores elegidos, necesita como argumentos, el nombre del array, la posicion que quieres borrar y la cantidad de valores que quieres borrar. __REAJUSTA LOS INDICES__. Ej.(Borramos desde puesto 5, 2 valores): ```array_splice($miArrayNumeros, 5,2);```
+
 ### DIFERENCIAS ENTRE ARRAY_FILTER() Y ARRAY_REDUCE() [VER ej6MetodosArray.php](./www/ej6MetodosArray.php).
 
 Array filter, devuelve un array más pequeño (filtrado), con la función que le hayas metido de callback
@@ -41,6 +45,17 @@ Array filter, devuelve un array más pequeño (filtrado), con la función que le
 Array reduce, crea una sola variable (ya no seria un array), con la función de callback que le hayas introducido
 
 _PARA AMBOS CASOS MIRAR [ENLACE](./www/ej6MetodosArray.php)_
+
+
+### Clases en PHP [CLASES 1](./www/ej8.1clases.php), [CLASES 2](./www/ej8.2clases2.php), [CLASES 3](./www/ej8.3clases3.php).
+
+### Namespaces en PHP [VER ej9Namespaces.php](./www/ej9Namespaces.php).
+
+### Herencia en PHP [VER ej10Herencia.php](./www/ej10Herencia.php).
+
+### Traits en PHP [VER ej11Traits.php](./www/ej11Traits.php).
+
+Mientras que una clase solo puede __HEREDAR__ de otra clase, los traits hacen que se pueda superar ese límite y hacer una herencia múltiple. Pueden compartir metodos y propiedades sin que sea necesarias relaciones jerarquicas de herencia
 
 ### Ejercicio practico. [VER SOLUCIÓN](./www/ej7MenuYMetodos).
 
@@ -53,3 +68,6 @@ Crear un menú con enlaces (pasamos la variable del switch en cada uno de los en
 5º. Crea un array con arrays dentro. El array padre será $monedasPais, tendrá un array dentro con indices 'pais' y 'moneda' y un valor para cada una. MINIMO introducir 4 valores y __SOLO MOSTRAR LOS QUE SU MONEDA SEA EURO__.
 6º. Ejercicio tipico de mostrar letra de tu DNI.
 7º. Muestra el año con la funcion date("Y").
+
+### Ejercicio agenda, sesiones [VER EJERCICIO](./www/AgendaPHP/index.php).
+
