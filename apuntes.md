@@ -51,6 +51,10 @@ _PARA AMBOS CASOS MIRAR [ENLACE](./www/ej6MetodosArray.php)_
 
 ### Namespaces [VER ej9Namespaces.php](./www/ej9Namespaces.php).
 
+Son "grupos" que podemos crear para hacer un mejor encapsulamiento del código, se pueden renombrar. Ademas si tenemos dos clases con el mismo nombre, hacemos que por 
+
+ejemplo la class Tabla (html) y Tabla(bricolaje), se puedan utilizar con el mismo nombre porque estan en diferentes namespaces.[VER ENLACE PARA ENTENDER MEJOR](./www/ej9Namespaces.php).
+
 ### Herencia [VER ej10Herencia.php](./www/ej10Herencia.php).
 
 ### Traits [VER ej11Traits.php](./www/ej11Traits.php).
